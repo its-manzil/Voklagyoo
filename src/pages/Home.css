@@ -1,138 +1,139 @@
 .main {
-    position: relative;
-    height: 100vh; /* Fixed typo '100svh' */
-    width: 100%;
+  position: relative;
+  height: 100vh; /* Fixed typo '100svh' */
+  width: 100%;
 }
 
 .slideshow-container {
-    position: relative;
-    max-width: 100vw;
-    height: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    width: 100%;
+  position: relative;
+  max-width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .slideshow-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0; /* Added to ensure proper positioning */
-    left: 0; /* Added to ensure proper positioning */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0; /* Added to ensure proper positioning */
+  left: 0; /* Added to ensure proper positioning */
 }
 
 .slide {
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0; /* Added to ensure proper positioning */
-    left: 0; /* Added to ensure proper positioning */
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; /* Added to ensure proper positioning */
+  left: 0; /* Added to ensure proper positioning */
 }
 
 .slide.active {
-    display: block;
+  display: block;
 }
 
 .fade {
-    transition: left 1s ease; /* Changed 'all' to 'opacity' for smoother transition */
+  transition: all 1s ease; /* Changed 'all' to 'opacity' for smoother transition */
 }
 
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 .s1 {
-    width: 100%;
-    min-height: 100vh; /* Fixed typo '100svh' */
-    padding: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-bar {
-    position: absolute;
-    top: 35%;
-    width: 100%;
-    max-width: 700px;
-    background: rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 10px 20px;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  max-width: 700px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
 }
 
 .search-bar input {
-    background: transparent;
-    flex: 1;
-    border: 0;
-    outline: none;
-    padding: 24px 20px;
-    font-size: 20px;
-    color: orange;
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: orange;
+  outline: 0;
 }
 
 ::placeholder {
-    color: orange;
+  color: orange;
 }
 
 .search-bar button img {
-    width: 25px;
+  width: 25px;
 }
 
 .search-bar button {
-    position: relative;
-    display: block;
-    line-height: 55px;
-    font-size: 60px;
-    text-align: center;
-    transition: 0.5s;
-    color: orange;
-    background: transparent;
-    border: 0;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    background: #ffffff5a;
+  position: relative;
+  display: block;
+  line-height: 55px;
+  font-size: 60px;
+  text-align: center;
+  transition: 0.5s;
+  color: orange;
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #ffffff5a;
 }
 
 .text-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    padding-top: 20px;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    color: #fff;
-    position: relative;
-    text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 20px;
+  background: rgba(0, 1, 0, 0.4);
+  width: 100%;
+  color: #fff;
+  position: relative;
+  text-align: center;
 }
 
 .text-box h1 {
-    font-size: 62px;
-    text-transform: uppercase;
-    background-clip: text, border-box;
-    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.5);
-    color: rgba(255, 255, 255, 0.6);
+  font-size: 62px;
+  text-transform: uppercase;
+  background-clip: text, border-box;
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .text-box p {
-    font-size: 18px;
-    text-transform: uppercase;
-    background-clip: text, border-box;
-    color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-transform: uppercase;
+  background-clip: text, border-box;
+  color: rgb(255, 255, 255);
 }
 
 /* CSS for mobile responsive */
 @media (max-width: 800px) {
-    .text-box h1 {
-        font-size: 40px;
-    }
-    .nav-links ul li {
-        display: block;
-    }
+  .text-box h1 {
+    font-size: 40px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
 }

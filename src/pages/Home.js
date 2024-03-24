@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { IoSearchCircle } from "react-icons/io5";
+
 import Nav from "./Nav";
 import "./Home.css";
 import Search from "./Search";
@@ -13,7 +13,7 @@ function Home() {
   ];
 
   useEffect(() => {
-    const interval = setInterval(goNext, 5000);
+    const interval = setInterval(goNext, 6000);
     return () => clearInterval(interval);
   }, [counter]);
 
@@ -42,10 +42,14 @@ function Home() {
           </div>
         ))}
         <div className="text-box">
-          <h1>VokLagyo</h1>
-          <p>Everything's good when it's about food</p>
-          <br />
-          <Search />
+          <h1 data-text="VokLagyo">VokLagyo</h1>
+          <p>
+            Everything's good <br />
+            when it's about food
+          </p>
+          <div className="seeyou">
+            <Search />
+          </div>
         </div>
       </div>
     </div>

@@ -67,7 +67,7 @@ function Owner() {
             <input
               type="text"
               className="input-field"
-              placeholder="Enter Email ID"
+              placeholder="Enter Hotel Name"
               required
             />
             <input

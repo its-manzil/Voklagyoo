@@ -35,8 +35,10 @@
   margin-top: 10px;
 }
 .Customer:hover {
-  background-color: #28a745;
+  color: white;
+  background-color: blue;
 }
 .Owner:hover {
-  background-color: #007bff;
+  color: white;
+  background-color: green;
 }

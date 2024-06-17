@@ -12,58 +12,48 @@ function Nav() {
     <nav className="nav">
       <ul>
         <li className="list active">
-          <a href="#">
-            <Link to="/Home" className="Link">
-              <button className="icon">
-                <IoHome />
-              </button>
-              <button className="text">HOME</button>
-            </Link>
-          </a>
+          <Link to="/Home" className="Link">
+            <button className="icon">
+              <IoHome />
+            </button>
+            <button className="text">HOME</button>
+          </Link>
         </li>
 
         <li className="list active">
-          <a href="#">
-            <Link to="/Restaurants" className="Link">
-              <button className="icon">
-                <FaHotel />
-              </button>
-              <button className="text">Restaurants</button>
-            </Link>
-          </a>
+          <Link to="/Restaurants" className="Link">
+            <button className="icon">
+              <FaHotel />
+            </button>
+            <button className="text">Restaurants</button>
+          </Link>
         </li>
 
         <li className="list active">
-          <a href="#">
-            <Link to="/Profile" className="Link">
-              <button className="icon">
-                <CgProfile />
-              </button>
-              <button className="text">Profile</button>
-            </Link>
-          </a>
+          <Link to="/Profile" className="Link">
+            <button className="icon">
+              <CgProfile />
+            </button>
+            <button className="text">Profile</button>
+          </Link>
         </li>
 
         <li className="list active">
-          <a href="#">
-            <Link to="/About" className="Link">
-              <button className="icon">
-                <FaBookOpen />
-              </button>
-              <button className="text">About</button>
-            </Link>
-          </a>
+          <Link to="/About" className="Link">
+            <button className="icon">
+              <FaBookOpen />
+            </button>
+            <button className="text">About</button>
+          </Link>
         </li>
 
         <li className="list active">
-          <a href="#">
-            <Link to="/Contact">
-              <button className="icon">
-                <MdContactPhone />
-              </button>
-              <button className="text">Contact</button>
-            </Link>
-          </a>
+          <Link to="/Contact" className="Link">
+            <button className="icon">
+              <MdContactPhone />
+            </button>
+            <button className="text">Contact</button>
+          </Link>
         </li>
       </ul>
     </nav>

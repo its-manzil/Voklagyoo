@@ -4,7 +4,6 @@ import emailjs from "@emailjs/browser";
 import "./contact.css";
 
 export const Contact = () => {
-
   const form = useRef();
   const [submitMessage, setSubmitMessage] = useState("");
 
@@ -19,24 +18,19 @@ export const Contact = () => {
         () => {
           setSubmitMessage(
             "Thanks for your response, we will get back to you soon."
-            
           );
           setTimeout(() => {
             setSubmitMessage("");
-          }, 6000);
-           // 6 seconds
+          }, 6000); // 6 seconds
         },
         (error) => {
-          setSubmitMessage(
-            "Failed to send mail, please try again."
-          );
+          setSubmitMessage("Failed to send mail, please try again.");
           setTimeout(() => {
             setSubmitMessage("");
-          
           }, 6000);
         }
       );
-      form.current.reset();
+    form.current.reset();
   };
 
   return (
@@ -46,7 +40,7 @@ export const Contact = () => {
         <h1>Contact Me</h1>
         <form ref={form} onSubmit={sendEmail}>
           <label>Name</label>
-          <input type="text" name="from_name" className="name" required upperCase="none"/>
+          <input type="text" name="from_name" className="name" required />
           <label>Email</label>
           <input type="email" name="from_email" className="email" required />
           <label>Message</label>

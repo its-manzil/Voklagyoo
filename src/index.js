@@ -8,8 +8,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Profile from "./pages/Profile";
 import Restaurants from "./pages/Restaurants";
-import Customer from "./pages/Customer";
-import Owner from "./pages/Owner";
 import { createBrowserRouter, RouterProvider, Router } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -38,14 +36,6 @@ const router = createBrowserRouter([
   {
     path: "Restaurants",
     element: <Restaurants />,
-  },
-  {
-    path: "Customer",
-    element: <Customer />,
-  },
-  {
-    path: "Owner",
-    element: <Owner />,
   },
 ]);
 
